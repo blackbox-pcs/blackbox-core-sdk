@@ -1,6 +1,6 @@
 {
   "name": "blackboxpcs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Black Box Precision: Unlocking High-Stakes Performance with Explainable AI",
   "main": "setup.py",
   "scripts": {
@@ -23,12 +23,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/your-org/blackboxpcs.git"
+    "url": "git+https://github.com/blackbox-pcs/blackbox-core-sdk.git"
   },
   "bugs": {
-    "url": "https://github.com/your-org/blackboxpcs/issues"
+    "url": "https://github.com/blackbox-pcs/blackbox-core-sdk/issues"
   },
-  "homepage": "https://github.com/your-org/blackboxpcs#readme",
+  "homepage": "https://github.com/blackbox-pcs/blackbox-core-sdk#readme",
   "files": [
     "blackboxpcs/**/*",
     "setup.py",

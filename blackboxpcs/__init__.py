@@ -4,7 +4,7 @@ Black Box Precision Core SDK
 Unlocking High-Stakes Performance with Explainable AI
 """
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 __author__ = "The XAI Lab"
 
 from .core import BlackBoxPrecision, ExplanationType, ExplanationMode

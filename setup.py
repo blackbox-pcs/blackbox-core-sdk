@@ -11,12 +11,12 @@ long_description = readme_file.read_text(encoding="utf-8") if readme_file.exists
 
 setup(
     name="blackboxpcs",
-    version="1.0.0",
+    version="1.0.1",
     author="The XAI Lab",
     description="Black Box Precision: Unlocking High-Stakes Performance with Explainable AI",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/your-org/blackboxpcs",
+    url="https://github.com/blackbox-pcs/blackbox-core-sdk",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 4 - Beta",
@@ -51,9 +51,9 @@ setup(
     },
     keywords="xai explainable-ai shap lime machine-learning ai interpretability",
     project_urls={
-        "Documentation": "https://github.com/your-org/blackboxpcs",
-        "Source": "https://github.com/your-org/blackboxpcs",
-        "Tracker": "https://github.com/your-org/blackboxpcs/issues",
+        "Documentation": "https://github.com/blackbox-pcs/blackbox-core-sdk",
+        "Source": "https://github.com/blackbox-pcs/blackbox-core-sdk",
+        "Tracker": "https://github.com/blackbox-pcs/blackbox-core-sdk/issues",
     },
 )
 
