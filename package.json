@@ -1,0 +1,43 @@
+{
+  "name": "blackboxpcs",
+  "version": "1.0.0",
+  "description": "Black Box Precision: Unlocking High-Stakes Performance with Explainable AI",
+  "main": "setup.py",
+  "scripts": {
+    "install": "pip install -e .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "xai",
+    "explainable-ai",
+    "shap",
+    "lime",
+    "machine-learning",
+    "ai",
+    "interpretability",
+    "python",
+    "black-box",
+    "explainable-ai"
+  ],
+  "author": "The XAI Lab",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-org/blackboxpcs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-org/blackboxpcs/issues"
+  },
+  "homepage": "https://github.com/your-org/blackboxpcs#readme",
+  "files": [
+    "blackboxpcs/**/*",
+    "setup.py",
+    "README.md",
+    "LICENSE",
+    "requirements.txt"
+  ],
+  "engines": {
+    "python": ">=3.8"
+  }
+}
+

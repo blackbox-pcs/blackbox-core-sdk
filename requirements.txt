@@ -1,0 +1,6 @@
+numpy>=1.21.0
+scikit-learn>=1.0.0
+shap>=0.41.0
+lime>=0.2.0.1
+
+
