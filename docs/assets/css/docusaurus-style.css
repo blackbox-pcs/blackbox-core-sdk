@@ -1,0 +1,367 @@
+/* Docusaurus-inspired styling for MkDocs Material */
+
+/* Hero Section Styling */
+.hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  margin: -1.2rem -1.2rem 2rem -1.2rem;
+  border-radius: 0;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero .md-button {
+  margin: 0.5rem;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.hero .md-button--primary {
+  background-color: white;
+  color: #667eea;
+  border: 2px solid white;
+}
+
+.hero .md-button--primary:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.hero .md-button:not(.md-button--primary) {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.hero .md-button:not(.md-button--primary):hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Dark mode hero */
+[data-md-color-scheme="slate"] .hero {
+  background: linear-gradient(135deg, #1e1e2e 0%, #2d1b4e 100%);
+}
+
+/* Typography improvements */
+.md-typeset {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.md-typeset h1 {
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.md-typeset h2 {
+  font-weight: 600;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.md-typeset h3 {
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h1,
+[data-md-color-scheme="slate"] .md-typeset h2 {
+  color: #ffffff;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h2 {
+  border-bottom-color: #404040;
+}
+
+/* Card grid improvements - Docusaurus style */
+.grid.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 3rem 0;
+}
+
+.grid.cards > * {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.grid.cards > *:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(102, 126, 234, 0.15);
+  border-color: #667eea;
+}
+
+.grid.cards > * .md-typeset h3 {
+  margin-top: 0;
+  color: #667eea;
+  font-size: 1.25rem;
+}
+
+.grid.cards > * .md-typeset p {
+  flex-grow: 1;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.grid.cards > * a {
+  margin-top: auto;
+  font-weight: 600;
+  color: #667eea;
+}
+
+[data-md-color-scheme="slate"] .grid.cards > * {
+  background: #1e1e2e;
+  border-color: #404040;
+}
+
+[data-md-color-scheme="slate"] .grid.cards > *:hover {
+  border-color: #667eea;
+  box-shadow: 0 12px 24px rgba(102, 126, 234, 0.25);
+}
+
+[data-md-color-scheme="slate"] .grid.cards > * .md-typeset p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Code block improvements */
+.md-typeset pre {
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  background: #f5f5f5;
+  border: 1px solid #e0e0e0;
+}
+
+[data-md-color-scheme="slate"] .md-typeset pre {
+  background: #1e1e2e;
+  border-color: #404040;
+}
+
+.md-typeset code {
+  border-radius: 0.25rem;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.9em;
+}
+
+/* Navigation improvements */
+.md-header {
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid #e0e0e0;
+}
+
+[data-md-color-scheme="slate"] .md-header {
+  background: #1e1e2e;
+  border-bottom-color: #404040;
+}
+
+.md-nav__title {
+  font-weight: 600;
+}
+
+.md-nav__link {
+  border-radius: 0.375rem;
+  padding: 0.5rem 0.75rem;
+  margin: 0.125rem 0;
+  transition: all 0.2s ease;
+}
+
+.md-nav__link:hover {
+  background-color: rgba(102, 126, 234, 0.1);
+}
+
+.md-nav__link--active {
+  background-color: rgba(102, 126, 234, 0.15);
+  color: #667eea;
+  font-weight: 600;
+}
+
+/* Sidebar improvements */
+.md-sidebar {
+  border-right: 1px solid #e0e0e0;
+}
+
+[data-md-color-scheme="slate"] .md-sidebar {
+  border-right-color: #404040;
+}
+
+/* Content area improvements */
+.md-content {
+  max-width: 900px;
+}
+
+.md-content__inner {
+  margin: 2rem 0;
+}
+
+/* Admonition improvements */
+.md-typeset .admonition {
+  border-radius: 0.5rem;
+  border-left-width: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Table improvements */
+.md-typeset table:not([class]) {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.md-typeset table:not([class]) th {
+  background-color: #f5f5f5;
+  font-weight: 600;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
+  background-color: #2d2d3e;
+}
+
+/* Button improvements */
+.md-typeset .md-button {
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.md-typeset .md-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer improvements */
+.md-footer {
+  background-color: #1a1a1a;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 4rem;
+}
+
+.md-footer__inner {
+  padding: 2rem 0;
+}
+
+.md-footer__title {
+  color: white;
+  font-weight: 600;
+}
+
+.md-footer__link {
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.md-footer__link:hover {
+  opacity: 1;
+}
+
+/* Search improvements */
+.md-search__form {
+  border-radius: 0.5rem;
+}
+
+.md-search__input {
+  border-radius: 0.5rem;
+}
+
+/* Tabs improvements */
+.md-typeset .tabbed-set {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.md-typeset .tabbed-set > input:first-child:checked ~ .tabbed-labels > :first-child,
+.md-typeset .tabbed-set > input:nth-child(3):checked ~ .tabbed-labels > :nth-child(2),
+.md-typeset .tabbed-set > input:nth-child(5):checked ~ .tabbed-labels > :nth-child(3),
+.md-typeset .tabbed-set > input:nth-child(7):checked ~ .tabbed-labels > :nth-child(4),
+.md-typeset .tabbed-set > input:nth-child(9):checked ~ .tabbed-labels > :nth-child(5) {
+  border-bottom: 2px solid #667eea;
+  color: #667eea;
+  font-weight: 600;
+}
+
+/* Spacing improvements */
+.md-typeset p {
+  margin-bottom: 1.25rem;
+}
+
+.md-typeset ul,
+.md-typeset ol {
+  margin-bottom: 1.25rem;
+}
+
+.md-typeset li {
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive improvements */
+@media screen and (max-width: 76.1875em) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero p {
+    font-size: 1.1rem;
+  }
+  
+  .grid.cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Smooth transitions */
+* {
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+/* Focus improvements */
+.md-typeset a:focus,
+.md-typeset a:focus-visible {
+  outline: 2px solid #667eea;
+  outline-offset: 2px;
+  border-radius: 0.25rem;
+}
+
+/* Badge/version improvements */
+.md-version__current {
+  font-weight: 600;
+}
+
+/* Breadcrumb improvements */
+.md-nav__item--active > .md-nav__link {
+  color: #667eea;
+  font-weight: 600;
+}
+

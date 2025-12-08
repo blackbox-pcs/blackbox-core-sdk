@@ -1,6 +1,13 @@
+<div class="hero" markdown>
+
 # Black Box Precision Core SDK
 
 **Unlocking High-Stakes Performance with Explainable AI**
+
+[:octicons-arrow-right-24: Get Started](getting-started.md){ .md-button .md-button--primary }
+[:octicons-book-24: Documentation](core-concepts.md){ .md-button }
+
+</div>
 
 <div class="grid cards" markdown>
 
