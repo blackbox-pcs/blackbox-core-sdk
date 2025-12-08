@@ -77,12 +77,4 @@ nav:
 
 plugins:
   - search
-  - mkdocstrings:
-      handlers:
-        python:
-          paths: [.]
-          selection:
-            docstring_style: google
-          rendering:
-            show_source: true
 
