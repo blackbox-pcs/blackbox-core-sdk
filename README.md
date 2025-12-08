@@ -12,6 +12,8 @@ The **Black Box Precision** SDK resolves the dilemma between AI performance and 
 
 This SDK is specifically designed for high-stakes environments where errors carry catastrophic consequences (e.g., medical diagnostics, autonomous systems, military applications, financial systems).
 
+[Docs Live](https://docs.blackboxprecision.com)
+
 ## Key Features
 
 - **🔬 SHAP Integration**: Theoretical gold standard for feature attribution
