@@ -27,17 +27,10 @@ theme:
     - navigation.sections
     - navigation.expand
     - navigation.top
-    - navigation.indexes
-    - navigation.tracking
     - search.suggest
     - search.highlight
-    - search.share
     - content.code.annotate
     - content.code.copy
-    - content.code.select
-    - content.tabs.link
-    - content.tooltips
-    - header.autohide
   font:
     text: Inter
     code: JetBrains Mono
@@ -45,7 +38,6 @@ theme:
     repo: fontawesome/brands/github
     logo: material/shield-check
   language: en
-  custom_dir: docs/.overrides
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -93,11 +85,12 @@ nav:
 plugins:
   - search:
       lang: en
-  - git-revision-date-localized:
-      enable_creation_date: true
-      type: date
-  - minify:
-      minify_html: true
+  # Optional plugins - uncomment if needed
+  # - git-revision-date-localized:
+  #     enable_creation_date: true
+  #     type: date
+  # - minify:
+  #     minify_html: true
 
 extra_css:
   - assets/css/docusaurus-style.css
