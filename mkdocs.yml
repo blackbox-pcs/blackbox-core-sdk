@@ -1,0 +1,88 @@
+site_name: Black Box Precision Core SDK
+site_description: Unlocking High-Stakes Performance with Explainable AI
+site_url: https://blackbox-pcs.github.io/blackbox-core-sdk
+repo_url: https://github.com/blackbox-pcs/blackbox-core-sdk
+repo_name: blackbox-pcs/blackbox-core-sdk
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.annotate
+    - content.code.copy
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - admonition
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Installation: installation.md
+    - Quick Start: getting-started.md
+  - User Guide:
+    - Core Concepts: core-concepts.md
+    - Explanation Types: explanation-types.md
+    - Examples: examples.md
+  - API Reference:
+    - Overview: api-reference.md
+    - BlackBoxPrecision: api/blackboxprecision.md
+    - SHAPExplainer: api/shapexplainer.md
+    - LIMEExplainer: api/limeexplainer.md
+    - Utilities: api/utils.md
+  - Use Cases:
+    - Medical Diagnostics: use-cases/medical.md
+    - Autonomous Systems: use-cases/autonomous.md
+    - Financial Systems: use-cases/financial.md
+  - Contributing: contributing.md
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [.]
+          selection:
+            docstring_style: google
+          rendering:
+            show_source: true
+

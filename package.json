@@ -2,7 +2,6 @@
   "name": "blackboxpcs",
   "version": "1.0.1",
   "description": "Black Box Precision: Unlocking High-Stakes Performance with Explainable AI",
-  "main": "setup.py",
   "scripts": {
     "install": "pip install -e .",
     "test": "echo \"Error: no test specified\" && exit 1"
