@@ -11,12 +11,16 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
       
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -25,8 +29,23 @@ jobs:
       
       - name: Install dependencies
         run: |
+          pip install --upgrade pip
           pip install -r requirements-docs.txt
+          pip install -r requirements.txt
+          pip install -e .
+      
+      - name: Build documentation
+        run: |
+          mkdocs build
+      
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
       
       - name: Deploy to GitHub Pages
-        run: mkdocs gh-deploy --force
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdocs gh-deploy --force --message "Deploy docs from commit ${{ github.sha }}"
 
